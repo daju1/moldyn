@@ -1,0 +1,1 @@
+t,temperature,ConvEKinTemp(ekin),sum_mom_xy,sum_vel[0],sum_vel[1],sum_vel[2],sum_vel_wk_up[0],sum_vel_wk_up[1],sum_vel_wk_up[2],sum_vel_wk_dw[0],sum_vel_wk_dw[1],sum_vel_wk_dw[2],sum_vel_up[0],sum_vel_up[1],sum_vel_up[2],sum_vel_dw[0],sum_vel_dw[1],sum_vel_dw[2],sum_f_wk_up[0],sum_f_wk_up[1],sum_f_wk_up[2],sum_f_wk_dw[0],sum_f_wk_dw[1],sum_f_wk_dw[2]
