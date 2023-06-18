@@ -1,0 +1,11 @@
+enable_nsteps = 1
+treshold_nsteps = 5
+
+enable_grad = 0
+treshold_grad = 1.000000e-003
+
+enable_delta_e = 0
+treshold_delta_e = 1.000000e-010
+treshold_delta_e_min_nsteps = 100
+
+box_optimization_type::no
