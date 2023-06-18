@@ -9,6 +9,9 @@ close all;
 M = [];
 for i = 1 : 8
     [FILENAME, PATHNAME] = uigetfile(['.txt']);
+    if ((0 == FILENAME) & (0 == PATHNAME))
+        break;
+    end
     cd(PATHNAME);FILENAME
     M = [M; dlmread([PATHNAME, FILENAME], ',')];
 end
@@ -385,4 +388,21 @@ sigma = sqrt(D / size(means, 2))
 
 % figure(11);
 % plot (1 : N, means);
+
+
+
+start1 = 1047;
+dVx = M(start1:end,cVx_wk_up)-M(start1:end,cVx_wk_dw);
+
+len = size(dVx,1);
+means = [];
+N = 20000
+wind = fix(len / N);
+for i = 1 : N
+    m = mean(dVx(1 + (i-1)*wind:i*wind));
+    means = [means m];
+end
+mat_ozh = mean(means)
+D = sum((means - mat_ozh).^2)/(size(means, 2)-1);
+sigma = sqrt(D / size(means, 2))
 
