@@ -1,5 +1,5 @@
 enable_nsteps = 1
-treshold_nsteps = 100
+treshold_nsteps = 7
 
 enable_grad = 0
 treshold_grad = 1.000000e-003
