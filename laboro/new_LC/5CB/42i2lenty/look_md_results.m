@@ -392,7 +392,7 @@ sigma = sqrt(D / size(means, 2))
 
 
 start1 = 1047;
-dVx = M(start1:end,cVx_wk_up)-M(start1:end,cVx_wk_dw);
+dVx = 1000*2*(M(start1:end,cVx_wk_up)-M(start1:end,cVx_wk_dw))/natoms_worked;
 
 len = size(dVx,1);
 means = [];
