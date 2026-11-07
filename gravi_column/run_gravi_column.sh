@@ -2,7 +2,9 @@
 # Столб неона в поле тяжести между двумя тепловыми стенками (patch gravi_walls).
 # Запускать ВНУТРИ контейнера (podman_run.sh), из этой папки.
 set -e -x
-RELEASE_DIR="$(cd "$(dirname "$0")/../../winlibghemical/linux/release20111012" && pwd)"
+
+RELEASE_DIR=$(dirname $(dirname ${PWD}))/winlibghemical3/linux/release20111012
+
 export LD_LIBRARY_PATH="${RELEASE_DIR}/local/lib"
 HERE="$(cd "$(dirname "$0")" && pwd)"
 EXE="${RELEASE_DIR}/examples/example_moldyn"
